@@ -11,5 +11,5 @@ sudo apt install python3-pip
 pip install dotfiles
 export PATH=$PATH:~/.local/bin
 
-dotfiles --add "$HOME/.config"
+dotfiles -C "$HOME/dotfiles/.dotfilesrc" --add "$HOME/.config"
 dotfiles -C "$HOME/dotfiles/.dotfilesrc" --sync --force

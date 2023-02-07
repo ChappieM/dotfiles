@@ -4,5 +4,6 @@ prefix = .
 ignore = [
     '.git',
     '.gitignore',
-    '*.swp']
+    '*.swp',
+    'README.md',]
 packages = ['config']
