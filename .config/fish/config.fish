@@ -8,3 +8,5 @@ if status is-interactive
 
     abbr -a dc docker compose
 end
+
+starship init fish | source
