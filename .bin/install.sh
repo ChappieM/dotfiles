@@ -7,7 +7,5 @@ sudo apt update
 sudo apt install -y fish
 
 # シンボリックリンクの作成
-sudo apt install -y python3-pip
-pip install dotfiles
-cd ../../
-dotfiles -C "dotfiles/.dotfilesrc" --sync
+git clone https://github.com/jbernard/dotfiles /tmp/dotfiles-tool
+./tmp/dotfiles-tool/bin/dotfiles -C "dotfiles/.dotfilesrc" --sync
