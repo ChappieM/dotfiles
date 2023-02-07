@@ -13,6 +13,9 @@ diverged = "<>"
 renamed = "r"
 deleted = "x"
 
+[container]
+disabled = true
+
 [aws]
 symbol = "aws "
 
