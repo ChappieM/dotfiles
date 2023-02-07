@@ -7,4 +7,9 @@ sudo apt update
 sudo apt install -y fish
 
 # シンボリックリンク作成
-./ln.sh
+sudo apt install python3-pip
+pip install dotfiles
+export PATH=$PATH:~/.local/bin
+
+dotfiles --add ".config"
+dotfiles -C "../.dotfilesrc" --sync --force
