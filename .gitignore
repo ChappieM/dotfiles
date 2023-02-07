@@ -21,6 +21,8 @@
 !/.gitignore_global
 !/.gitconfig_shared
 
+!/.dotfilesrc
+
 !/README.md
 !.gitignore
 !.gitkeep
