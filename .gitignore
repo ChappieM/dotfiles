@@ -9,6 +9,7 @@
 ### not ignore ###
 !/.bin/
 !/.bin/install.sh
+!/.bin/ln.sh
 
 !/.bashrc
 
