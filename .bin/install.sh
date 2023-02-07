@@ -1,5 +1,5 @@
 #!/bin/bash
-cd `dirname $0`
+cd $HOME
 
 # Install fish
 sudo apt-add-repository ppa:fish-shell/release-3
@@ -11,5 +11,5 @@ sudo apt install python3-pip
 pip install dotfiles
 export PATH=$PATH:~/.local/bin
 
-dotfiles --add ".config"
-dotfiles -C "../.dotfilesrc" --sync --force
+dotfiles --add "$HOME/.config"
+dotfiles -C "$HOME/dotfiles/.dotfilesrc" --sync --force
