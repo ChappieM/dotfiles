@@ -7,6 +7,7 @@ sudo apt update
 sudo apt install -y fish
 
 # Install StarShip
+sudo apt install -y curl
 curl -sS https://starship.rs/install.sh | sh
 
 # 既存の.config, .bin内のファイルを取り込む
