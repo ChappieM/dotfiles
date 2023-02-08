@@ -19,6 +19,8 @@
 !/.config/fish/functions/
 !/.config/fish/functions/fish_prompt.fish
 !/.config/starship.toml
+!/.config/tmux/
+!/.config/tmux/tmux.conf
 
 !/.gitignore_global
 !/.gitconfig_shared
