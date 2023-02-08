@@ -10,6 +10,9 @@ sudo apt install -y fish
 sudo apt install -y curl
 curl -sS https://starship.rs/install.sh | sh
 
+# Install tmux
+sudo apt install tmux
+
 # 既存の.config, .bin内のファイルを取り込む
 if [ -d "$HOME/.config/" ]; then
     mv --interactive $HOME/.config/* $HOME/dotfiles/.config/
