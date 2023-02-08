@@ -9,11 +9,6 @@ sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
 
-# Install fish plugins with fisher
-curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-sudo apt install -y fzf
-fisher update
-
 # Install StarShip
 curl -sS https://starship.rs/install.sh | sh
 
@@ -34,3 +29,8 @@ pip install dotfiles
 export PATH=$PATH:~/.local/bin
 
 dotfiles -C "$HOME/dotfiles/.dotfilesrc" --sync --force
+
+# Install fish plugins with fisher
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+sudo apt install -y fzf
+fisher update
