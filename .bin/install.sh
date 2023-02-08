@@ -2,6 +2,7 @@
 cd $HOME
 
 # Install fish
+sudo apt install -y software-properties-common
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
@@ -11,7 +12,7 @@ sudo apt install -y curl
 curl -sS https://starship.rs/install.sh | sh
 
 # Install tmux
-sudo apt install tmux
+sudo apt install -y tmux
 
 # 既存の.config, .bin内のファイルを取り込む
 if [ -d "$HOME/.config/" ]; then
@@ -22,7 +23,7 @@ if [ -d "$HOME/.bin/" ]; then
 fi
 
 # シンボリックリンク作成
-sudo apt install python3-pip
+sudo apt install -y python3-pip
 pip install dotfiles
 export PATH=$PATH:~/.local/bin
 
