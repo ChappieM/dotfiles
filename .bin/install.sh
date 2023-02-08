@@ -1,14 +1,20 @@
 #!/bin/bash
 cd $HOME
 
+# setup
+sudo apt install -y curl software-properties-common
+
 # Install fish
-sudo apt install -y software-properties-common
 sudo apt-add-repository ppa:fish-shell/release-3
 sudo apt update
 sudo apt install -y fish
 
+# Install fish plugins with fisher
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+sudo apt install -y fzf
+fisher update
+
 # Install StarShip
-sudo apt install -y curl
 curl -sS https://starship.rs/install.sh | sh
 
 # Install tmux
