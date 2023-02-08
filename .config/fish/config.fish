@@ -10,8 +10,8 @@ if status is-interactive
 end
 
 # tmux自動起動
-if test -z $TMUX
-  tmux new-session
-end
+# if test -z $TMUX
+#   tmux new-session
+# end
 
 starship init fish | source

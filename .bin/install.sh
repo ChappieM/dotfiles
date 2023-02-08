@@ -17,10 +17,10 @@ sudo apt install -y tmux
 
 # 既存の.config, .bin内のファイルを取り込む
 if [ -d "$HOME/.config/" ]; then
-    mv --interactive $HOME/.config/* $HOME/dotfiles/.config/
+    mv --no-clobber $HOME/.config/* $HOME/dotfiles/.config/
 fi
 if [ -d "$HOME/.bin/" ]; then
-    mv --interactive $HOME/.bin/* $HOME/dotfiles/.bin/
+    mv --no-clobber $HOME/.bin/* $HOME/dotfiles/.bin/
 fi
 
 # シンボリックリンク作成
@@ -33,4 +33,4 @@ dotfiles -C "$HOME/dotfiles/.dotfilesrc" --sync --force
 # Install fish plugins with fisher
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 sudo apt install -y fzf
-fisher update
+fish -c "fisher update"
