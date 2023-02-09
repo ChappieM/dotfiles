@@ -34,7 +34,4 @@
 
 !/README.md
 !.gitignore
-!/.github/
-!/.github/workflows/
-!/.github/workflows/run.yaml
 !.gitkeep
