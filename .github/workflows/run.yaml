@@ -1,7 +1,12 @@
-name: learn-github-actions
+name: CI
 on: [push]
+
 jobs:
-  check-bats-version:
+  ubuntu:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "this is pen"
+      - uses: actions/checkout@v1
+      - name: Install required packages
+        run: apt-get update && apt-get install -y git sudo
+      - name: Install dotfiles
+        run: .bin/install.sh
