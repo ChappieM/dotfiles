@@ -6,3 +6,5 @@ abbr -a gp git push
 
 # docker 
 abbr -a dc docker compose
+
+abbr -a t tmux
