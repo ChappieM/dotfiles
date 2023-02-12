@@ -9,6 +9,7 @@
 ### not ignore ###
 !/.bin/
 !/.bin/install.sh
+!/.bin/install-vscode-extentions.sh
 
 !/.bashrc
 
@@ -26,6 +27,11 @@
 
 !/.config/tmux/
 !/.config/tmux/tmux.conf
+
+!/.config/Code/
+!/.config/Code/User
+!/.config/Code/extensions
+!/.config/Code/User/settings.json
 
 !/.gitignore_global
 !/.gitconfig_shared
