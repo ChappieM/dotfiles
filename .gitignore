@@ -33,6 +33,11 @@
 !/.config/Code/extensions
 !/.config/Code/User/settings.json
 
+!/.config/nvim/
+!/.config/nvim/*
+!/.config/nvim/lua/
+!/.config/nvim/lua/*
+
 !/.gitignore_global
 !/.gitconfig_shared
 

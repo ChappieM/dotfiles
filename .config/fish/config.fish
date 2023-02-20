@@ -1,6 +1,5 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
-    source ~/.asdf/asdf.fish
 end
 
 # tmux自動起動
@@ -9,3 +8,4 @@ end
 # end
 
 starship init fish | source
+source ~/.asdf/asdf.fish
