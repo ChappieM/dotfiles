@@ -12,10 +12,10 @@ vim.g.mapleader = " "
 vim.keymap.set("i","jk","<Esc>", { noremap = true, silent = true})
 
 -- ファイラー 
-vim.keymap.set("n", "<leader>e",":Telescope file_browser<CR>",{ noremap = true })
+vim.keymap.set("n", "<leader>b",":Telescope file_browser<CR>",{ noremap = true })
 
 -- fzf
-vim.keymap.set("n", "<leader>f",":Telescope find_files<CR>", { noremap = true })
+vim.keymap.set("n", "<leader>e",":Telescope find_files<CR>", { noremap = true })
 
 -- バッファ切り替え
 vim.keymap.set("n", "<C-n>",":bnext<CR>", { noremap = true })
