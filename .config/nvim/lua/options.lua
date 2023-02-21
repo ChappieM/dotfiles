@@ -1,5 +1,9 @@
 -- 行番号
-vim.opt.number = true 
+vim.opt.number = true
+
+-- タブサイズ
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
 
 -- マウス操作
 vim.opt.mouse = 'a'
@@ -8,7 +12,7 @@ vim.opt.mouse = 'a'
 vim.opt.title = true
 
 -- help言語
-vim.opt.helplang = 'ja', 'en'
+vim.opt.helplang = 'ja'
 
 -- -エラー時の音を画面表示に
 vim.opt.visualbell = true
@@ -36,4 +40,4 @@ vim.opt.wrapscan = true
 
 
 -- フロートウィンドウのカラースキームを上書きしておく
-vim.cmd[[hi NormalFloat ctermfg=LightGrey]] 
+vim.cmd[[hi NormalFloat ctermfg=LightGrey]]

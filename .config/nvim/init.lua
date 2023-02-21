@@ -12,6 +12,11 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 require("telescope").load_extension "file_browser"
 
 
+-- Mason
+require("mason").setup()
+require("mason-lspconfig").setup()
+
+
 -- LSP
 local lsp = require("lspconfig")
 -- lsp.pyright.setup({})
@@ -41,3 +46,23 @@ cmp.setup.cmdline(":", {
 	},
 })
 
+
+-- Linter
+local null_ls = require('null-ls')
+local sources = {
+  null_ls.builtins.diagnostics.cspell.with({
+	extra_args = { '--config', '/home/chawata/.config/cspell/cspell.json' },
+    diagnostics_postprocess = function(diagnostic)
+      -- レベルをWARNに変更（デフォルトはERROR）
+      diagnostic.severity = vim.diagnostic.severity["WARN"]
+    end,
+    condition = function()
+      -- cspellが実行できるときのみ有効
+      return vim.fn.executable('cspell') > 0
+    end
+  })
+}
+
+null_ls.setup({
+  sources = sources
+})

@@ -7,5 +7,5 @@ end
 #   tmux new-session
 # end
 
-starship init fish | source
 source ~/.asdf/asdf.fish
+starship init fish | source
